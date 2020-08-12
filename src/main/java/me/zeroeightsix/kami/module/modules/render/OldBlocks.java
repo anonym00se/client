@@ -1,6 +1,5 @@
 package me.zeroeightsix.kami.module.modules.render;
 
-import com.haxalicious.OldBlocksPlugin.IChunkParser;
 import com.mojang.authlib.GameProfileRepository;
 import com.mojang.authlib.minecraft.MinecraftSessionService;
 import com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService;
@@ -21,20 +20,15 @@ import net.minecraft.util.Tuple;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.ChunkPos;
 import net.minecraft.world.GameType;
-import net.minecraft.world.World;
 import net.minecraft.world.WorldSettings;
 import net.minecraft.world.WorldType;
 import net.minecraft.world.chunk.Chunk;
-import net.minecraft.world.storage.WorldInfo;
 import net.minecraftforge.event.world.ChunkEvent;
 import org.lwjgl.opengl.GL11;
 
 import java.io.File;
-import java.rmi.*;
-import java.rmi.registry.*;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.stream.Collectors;
