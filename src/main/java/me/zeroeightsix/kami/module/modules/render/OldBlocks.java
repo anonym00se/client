@@ -82,6 +82,7 @@ public class OldBlocks extends Module {
         PlayerProfileCache gameFolder = new PlayerProfileCache(dummyProfile, new File(mc.gameDir, MinecraftServer.USER_CACHE_FILE.getName()));
         WorldSettings worldSettings = new WorldSettings(seed, GameType.SURVIVAL, false, false, WorldType.DEFAULT);
         mcServer = new IntegratedServer(mc, seedString.getValue(), seedString.getValue(), worldSettings, dummyAuth, dummySession, dummyProfile, gameFolder);
+        mcServer.loadAllWorlds(seedString.getValue(), seedString.getValue(), seed, WorldType.DEFAULT, "");
         startTime = 0;
     }
 
