@@ -52,7 +52,6 @@ public class OldBlocks extends Module {
     private final Setting<String> seedString = register(Settings.stringBuilder("Seed").withValue("0"));
     private final Setting<Integer> alpha = register(Settings.integerBuilder("Transparency").withMinimum(1).withMaximum(255).withValue(120).build());
     private final Setting<Integer> chunkDiscardThreshold = register(Settings.integerBuilder("ChunkDiscardThreshold").withMinimum(0).withValue(1000).build());
-    private final Setting<Integer> updateInterval = register(Settings.integerBuilder("UpdateInterval").withMinimum(0).withValue(200).build());
     private final Setting<Boolean> tracers = register(Settings.booleanBuilder("Tracers").withValue(true).build());
 
     public long seed = Long.parseLong(seedString.getValue());
@@ -236,7 +235,6 @@ public class OldBlocks extends Module {
     }
 
     public int mapBlockNether(int id) {
-        int mappedId;
         switch(id) {
             case 10:
             case 39:
@@ -255,7 +253,6 @@ public class OldBlocks extends Module {
     }
 
     public int mapBlockEnd(int id) {
-        int mappedId;
         switch(id) {
             case 198:
             case 199:
