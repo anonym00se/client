@@ -71,7 +71,7 @@ public class OldBlocks extends Module {
         }
         if(seedString.equals("0")) {
             sendErrorMessage(getChatName() + "Seed is not set!");
-            sendWarningMessage(getChatName() + "Set the seed with &7" + Command.getCommandPrefix() + "OldBlocks set Seed&f seed");
+            sendWarningMessage(getChatName() + "Set the seed with &7" + Command.getCommandPrefix() + "set OldBlocks Seed&f seed");
             disable();
             return;
         }
